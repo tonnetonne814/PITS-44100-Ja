@@ -18,8 +18,8 @@ Anacondaによる実行環境構築を想定します。
     ```
 1. このリポジトリをクローンする（もしくはDownload Zipでダウンロードする）
     ```sh
-    git clone  # このリポジトリをダウンロード
-    cd PITS_44100_JA # フォルダ移動
+    git clone https://github.com/tonnetonne814/PITS-44100-Ja.git
+    cd PITS-44100-Ja # フォルダ移動
     ```
 1. [PyTorch.org](https://pytorch.org/)より、自分の環境に合わせてPyTorchをインストールする
     ```sh
@@ -98,9 +98,10 @@ Terminalにて、話者名や、読み上げテキスト、ピッチシフト数
     ```
 
 ## 事前学習モデル
-JVSコーパスをxxx Batch、xxx Epoch程度学習した程度のモデルです。喋ったりピッチを変更する程度には問題ないとは思いますが、**学習不足である**ことに注意して使用してください。
+JVSコーパスを22050Hz版は150Epoch、44100Hz版は250Epoch程度学習した程度のモデルです。喋ったりピッチを変更する程度には問題ないとは思いますが、**学習不足である**ことに注意して使用してください。
 
-**ダウンロード：**
+**ダウンロード** : 
+[PITS(A+D)22050Hz版](https://drive.google.com/file/d/18eOyh8yEqryYTTssA1yUetbs66SbtlrM/view?usp=share_link) [PITS(A+D)44100版](https://drive.google.com/file/d/1AfSUHXkZ20_i_zwN8-f6I122pJd3Zb32/view?usp=share_link)
 
 ## 付録(Yingramの可視化)
 >Yingram, an acoustic feature inspired by [YIN algorithm [22]](http://audition.ens.fr/adc/pdf/2002_JASA_YIN.pdf) that captures pitch information including harmonics.Yingram is designed to address the limitations of extracting f0, which is not well-defined in some cases [[23]](https://arxiv.org/abs/1910.10235), and the Yingram-based model shows better preference than the f0-based model [[16]](https://arxiv.org/abs/2110.14513).
