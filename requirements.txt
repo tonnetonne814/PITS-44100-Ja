@@ -1,0 +1,16 @@
+Cython
+matplotlib
+tensorboard
+kiwipiepy
+librosa==0.8.0
+numpy
+scipy
+Unidecode
+omegaconf
+alias_free_torch
+phaseaug
+pyopenjtalk==0.2.0
+inflect
+phaseaug
+soundcard 
+soundfile
